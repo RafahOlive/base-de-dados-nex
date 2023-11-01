@@ -1,18 +1,18 @@
 import Link from "next/link";
-import { FaCss3 } from "react-icons/fa6";
+import { FaReact } from "react-icons/fa6";
 import Line from "./line";
 
-export default function CssSidebar() {
+export default function ReactSidebar() {
   return (
     <nav className="flex flex-col gap-1 m-4 w-44 h-screen">
       <div className="flex">
-        <FaCss3 color="blue" size={25} />
-        CSS
+        <FaReact color="blue" size={25} />
+        React
       </div>
       <Line />
-      <span className="text-[#3c3c43] text-sm font-bold">Formas</span>
+      <span className="text-[#3c3c43] text-sm font-bold">NextJs</span>
       <Link href="/" className="text-[#3c3c43] text-sm">
-        Linha
+        Porque Nextjs
       </Link>
     </nav>
   );

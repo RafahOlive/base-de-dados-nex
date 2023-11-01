@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaHtml5 } from "react-icons/fa6";
 import Line from "./line";
 
-export default function Sidebar() {
+export default function HtmlSidebar() {
   return (
     <nav className="flex flex-col gap-1 m-4 w-44 h-screen">
       <div className="flex">

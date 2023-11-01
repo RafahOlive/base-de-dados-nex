@@ -1,4 +1,4 @@
-import HtmlSidebar from "./page";
+import HtmlSidebar from "../page";
 
 export default function HtmlSidebarLayout({
   children,
@@ -6,7 +6,7 @@ export default function HtmlSidebarLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex text-center">
+    <div className="flex">
       <div className="">
         <HtmlSidebar />
       </div>
