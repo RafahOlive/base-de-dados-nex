@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 
 import "./global.css";
+import Header from "./components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,21 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-3/4 h-[63px] flex justify-evenly absolute items-center left-52">
-          <button className=" h-[40px] bg-[#f6f6f7] rounded-lg px-2">
-            Procurar
-            </button>
-          <nav className="flex gap-4">
-            <Link href="/html">html</Link>
-            <Link href="/css">Css</Link>
-            <Link href="/">JavaScript</Link>
-            <Link href="/">React</Link>
-            <Link href="/html/nav" className="text-[#3c3c43] text-sm">
-            Nav
-          </Link>
-          </nav>
+        <div className="container flex flex-col mx-auto">
+          <Header />
+          {children}
         </div>
-        {children}
       </body>
     </html>
   );
